@@ -78,3 +78,7 @@ const bankOperation = (operation, amount) => {
             return "Unknown operation";
     }
 };
+
+console.log(bankOperation("deposit", 5000));
+console.log(bankOperation("withdraw", 3000));
+console.log(bankOperation("balance"));
