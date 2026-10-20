@@ -52,3 +52,12 @@ console.log(withdraw(5000));
 console.log(withdraw(20000));
 console.log(withdraw(-500));
 console.log(withdraw(3000));
+
+const loanApplication = (age,monthlyIncome,hasDebt,loanAmount) => {
+    if (age>=18 && !hasDebt && monthlyIncome>=20000 && loanAmount>0 && loanAmount <= 10 * monthlyIncome) {
+        return "Loan approved"
+    } else {
+        return "Loan rejected"
+    }
+}
+
