@@ -61,3 +61,20 @@ const loanApplication = (age,monthlyIncome,hasDebt,loanAmount) => {
     }
 }
 
+const bankOperation = (operation, amount) => {
+
+    switch (operation) {
+
+        case "deposit":
+            return deposit(amount);
+
+        case "withdraw":
+            return withdraw(amount);
+
+        case "balance":
+            return balance;
+
+        default:
+            return "Unknown operation";
+    }
+};
